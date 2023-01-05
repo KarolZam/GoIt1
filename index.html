@@ -448,7 +448,7 @@
             </div>
           </div>
           <form class="newsletter-box">
-            <label class="newsletter-header"> Zapisz się do newslettera</label>
+            <label for="email" class="newsletter-header"> Zapisz się do newslettera</label>
             <div class="newsletter-flex">
               <input
                 class="newsletter-input"
@@ -515,7 +515,8 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label for="acceptation" class="accept-checkbox privacy-box">
+          <label class="privacy-box" for="acceptation">
+            <span class="privacy-flex-box">
             <input
               id="acceptation"
               type="checkbox"
@@ -527,11 +528,13 @@
             <svg class="form-checkbox" width="16" height="15">
               <use href="images/icons-modal.svg#icon-vector"></use>
             </svg>
+
             <span class="privacy-text"
               >Oświadczam iż akceptuję
               <a href="#" class="privacy-link">Regulamin</a> i
               <a href="#" class="privacy-link">Politykę Prywatności.</a></span
             >
+          </span>
           </label>
           <div class="button-box">
             <button class="modal-submit-btn" type="submit">Wyślij</button>
