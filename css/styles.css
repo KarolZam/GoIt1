@@ -432,7 +432,7 @@ body {
 }
 
 .newsletter-flex {
-    padding-top: 20px;
+    margin-top: 20px;
     display: flex;
     gap: 12px;
 }
@@ -669,7 +669,8 @@ body {
 }
 
 .form-input {
-    border: 1px solid var(--dark-grey);
+    border: 1px solid #21212133;
+    font-size: 12px;
     border-radius: 4px;
     display: inline-block;
     width: 448px;
@@ -706,7 +707,6 @@ body {
 
 .form-svg {
     fill: currentColor;
-    padding: 3px;
     position: absolute;
     left: 14px;
     top: 50%;
@@ -723,6 +723,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     border-radius: 4px;
+    border-color: #21212133;
     outline: none;
     transition-property: border;
     transition-duration: 250ms;
@@ -739,16 +740,24 @@ body {
     border-color: var(--blue);
 }
 
-.accept-checkbox {
-    position: relative;
-}
-
 .checkbox-none {
     display: none;
     opacity: 0;
 }
 
+.privacy-box {
+    position: relative;
+    left: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .form-checkbox {
+    display: flex;
     position: absolute;
     left: 0px;
     transition-duration: 250ms;
@@ -756,20 +765,12 @@ body {
     fill: var(--white);
     border: 1px solid var(--black);
     border-radius: 2px;
-    margin-left: 10px;
+    margin: auto;
 }
 
 .checkbox-none:checked+.form-checkbox {
     background-color: var(--blue);
     border-color: var(--blue);
-}
-
-.privacy-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .privacy-text {
